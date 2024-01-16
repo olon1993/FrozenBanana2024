@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d6e2a4b38973f4da57fa6fb0bd17bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 915169ff4a27fec42b652e91c3edf65d, type: 3}
   m_Name: JabSO
   m_EditorClassIdentifier: 
   Name: Jab
