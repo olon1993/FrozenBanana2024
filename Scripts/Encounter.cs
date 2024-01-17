@@ -123,7 +123,7 @@ public class Encounter : MonoBehaviour
             foreach (AbilitySO abilitySO in bodypart.Abilities)
             {
                 GameObject buttonIns = Instantiate(ButtonPrefab, ActionPanelGO.transform);
-                buttonIns.GetComponentInChildren<TMP_Text>().SetText(abilitySO.Name);
+                buttonIns.GetComponentInChildren<TMP_Text>().SetText(abilitySO.Name + " (" + abilitySO.Region + ")");
                 buttonIns.GetComponent<Button>().onClick.AddListener(delegate {
                     AttackButtonClicked(combatant.GetComponent<Combatant>(), abilitySO);
                 });
