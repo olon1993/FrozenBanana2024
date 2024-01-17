@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BodyPart : MonoBehaviour
 {
+    public event Action OnDie;
+
     [SerializeField] public string Name;
     [SerializeField] public int MaxHp;
     [SerializeField] public string Region;
@@ -11,7 +14,7 @@ public class BodyPart : MonoBehaviour
     bool containsLiveAbilitySO;
 
     [SerializeField] private int currentHp;
-    [SerializeField] private bool isDestroyed;
+    [SerializeField] public bool IsCrippled = false;
 
     private void Start()
     {
@@ -35,17 +38,16 @@ public class BodyPart : MonoBehaviour
 
         if(currentHp == 0)
         {
-            isDestroyed = true;
-            Debug.Log(Name + " has been destroyed.");
-
             if (containsLiveAbilitySO)
             {
-                Debug.Log(Name + " has died");
+                Debug.Log("BodyPart.Die");
+                OnDie();
                 return true;
             }
             else
             {
-                Debug.Log(Name + " has been crippled.");
+                Debug.Log("BodyPart.Cripple");
+                IsCrippled = true;
             }
         }
 

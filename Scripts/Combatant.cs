@@ -10,17 +10,15 @@ public class Combatant : MonoBehaviour
 
     [SerializeField] public List<BodyPart> BodyParts;
     [SerializeField] Combatant Enemy;
+    [SerializeField] public bool IsDead = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach (BodyPart bodyPart in BodyParts)
+        {
+            bodyPart.OnDie += Die;
+        }
     }
 
     public void Attack(string region)
@@ -36,5 +34,10 @@ public class Combatant : MonoBehaviour
         }
 
         OnTurnComplete();
+    }
+
+    public void Die()
+    {
+        IsDead = true;
     }
 }

@@ -21,10 +21,4 @@ public class EnemyAi : MonoBehaviour
     {
         _combatant.Attack(_regions[Random.Range(0, _regions.Length - 1)]);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
