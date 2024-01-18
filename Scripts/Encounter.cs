@@ -12,6 +12,7 @@ public class Encounter : MonoBehaviour
     [SerializeField] List<GameObject> Enemies;
     [SerializeField] GameObject ActionPanelGO;
     [SerializeField] GameObject ButtonPrefab;
+    [SerializeField] GameObject VictoryPanel;
 
     private List<GameObject> _turnOrder;
     private int _turnIndex = 0;
@@ -100,6 +101,7 @@ public class Encounter : MonoBehaviour
             Destroy(child.gameObject);
         }
         Debug.Log("Victory!");
+        VictoryPanel.SetActive(true);
     }
 
     void GameOver()
