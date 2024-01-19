@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Upper Cut
   Region: High
+  IsActiveAbility: 1
+  Damage: 7
+  EnergyCost: 6

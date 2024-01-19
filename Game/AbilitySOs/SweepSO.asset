@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sweep
   Region: Low
+  IsActiveAbility: 1
+  Damage: 3
+  EnergyCost: 2

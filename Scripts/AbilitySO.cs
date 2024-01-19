@@ -7,4 +7,7 @@ public class AbilitySO : ScriptableObject
 {
     public string Name;
     public string Region;
+    public bool IsActiveAbility;
+    public int Damage;
+    public int EnergyCost;
 }

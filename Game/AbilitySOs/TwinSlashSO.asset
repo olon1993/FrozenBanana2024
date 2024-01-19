@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Twin Slash
   Region: Mid
+  IsActiveAbility: 1
+  Damage: 8
+  EnergyCost: 5

@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Kick
   Region: Mid
+  IsActiveAbility: 1
+  Damage: 6
+  EnergyCost: 7

@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyAi : MonoBehaviour
 {
     Combatant _combatant;
-    string[] _regions = new string[] { "High", "Mid", "Low" };
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +18,13 @@ public class EnemyAi : MonoBehaviour
 
     public void TakeTurn()
     {
-        _combatant.Attack(_regions[Random.Range(0, _regions.Length - 1)]);
+        // Check what body parts are active
+        // Get lowest cost ability
+        // While energy >= lowest cost
+        //      continue to attack randomly
+        // End Turn
+        BodyPart buffer = _combatant.BodyParts[Random.Range(0, _combatant.BodyParts.Count)];
+        _combatant.Attack(buffer.Abilities[Random.Range(0, buffer.Abilities.Count)]);
+        _combatant.EndTurn();
     }
 }
