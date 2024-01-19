@@ -2,4 +2,7 @@ Ville Nousiainen
 	Combat Track fight_for_your_life_loop.wav
 
 Joshuaempyre
-	Menu Track Arcade_music_loop.wav
+	Character Customization Menu Track Arcade_music_loop.wav
+
+MuzaProduction
+	Main Menu Track arcade-loop.wav
