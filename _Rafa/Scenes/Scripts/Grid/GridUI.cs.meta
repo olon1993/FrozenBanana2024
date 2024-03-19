@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ed815506a0131db43ae5d3ee183c89ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gridLines: {instanceID: 0}
+  - pathLine: {instanceID: 0}
+  - _tilePrefab: {instanceID: 0}
+  - baseColor: {fileID: 21300000, guid: d14c2e6532b06224b82014b0c4642763, type: 3}
+  - blueHighlight: {fileID: 21300000, guid: 09a56384c7046984b9544f5e43b99cee, type: 3}
+  - redHighlight: {fileID: 21300000, guid: fdd1025a480f3a24e87e672b877546c0, type: 3}
+  - gridLineMesh: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
